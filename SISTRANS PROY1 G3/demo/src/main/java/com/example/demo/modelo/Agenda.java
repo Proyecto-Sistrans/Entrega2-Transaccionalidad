@@ -16,13 +16,13 @@ public class Agenda {
     @Id 
     @GeneratedValue(strategy = GenerationType.AUTO)
 
-    private String id;
+    private Long id;
     private LocalDateTime fecha; // Fecha y hora de la cita
     private int duracion; // Duración de la cita en minutos
     private EstadoCita estado;
 
         
-    enum EstadoCita {
+    public enum EstadoCita {
         CANCELADA, TERMINADA, AUSENCIA, AGENDADA
     }
 
@@ -32,12 +32,22 @@ public class Agenda {
         this.estado = estado;
     }
 
+    private String ordenCita;
+
+    public String getOrdenCita() {
+        return ordenCita;
+    }
+
+    public void setOrdenCita(String ordenId) {
+        this.ordenCita = String.valueOf(ordenId);
+    }
+
 
     public Agenda () 
     {;}
 
     //Getters
-    public String getId() {
+    public Long getId() {
         return id;
     }
     public LocalDateTime getFecha() {
@@ -46,13 +56,13 @@ public class Agenda {
     public int getDuracion() {
         return duracion;
     }
-    public EstadoCita getEstado() {
-        return estado;
+    public String getEstado() {
+        return estado.name();
     }
 
     //Setters
-    public void setId(String id) {
-        this.id = id;
+    public void setId(Long id2) {
+        this.id = id2;
     }
     public void setFecha(LocalDateTime fecha) {
         this.fecha = fecha;
@@ -62,6 +72,11 @@ public class Agenda {
     }
     public void setEstado(EstadoCita estado) {
         this.estado = estado;
+    }
+
+    public void setPacienteCita(String afiliadoId) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setPacienteCita'");
     }
 
 }

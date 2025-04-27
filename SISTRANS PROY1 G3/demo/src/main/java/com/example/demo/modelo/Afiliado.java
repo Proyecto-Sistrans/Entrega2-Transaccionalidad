@@ -81,6 +81,11 @@ public class Afiliado {
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
+
+    public void setIdentificacion(String id2) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setIdentificacion'");
+    }
   
     
 

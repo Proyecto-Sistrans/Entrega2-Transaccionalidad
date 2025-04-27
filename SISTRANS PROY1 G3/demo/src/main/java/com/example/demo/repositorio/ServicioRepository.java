@@ -1,4 +1,4 @@
-package repositorio;
+package com.example.demo.repositorio;
 
 import java.util.Collection;
 
@@ -9,7 +9,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.transaction.annotation.Transactional;
 import com.example.demo.modelo.Servicio;
 
-public interface ServicioRepository extends JpaRepository<Servicio, String> {
+public interface ServicioRepository extends JpaRepository<Servicio, Long> {
     
     @Query(value= "SELECT * FROM servicios", nativeQuery = true)
     Collection<Servicio> darServicios();

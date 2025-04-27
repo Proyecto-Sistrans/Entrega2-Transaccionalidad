@@ -37,4 +37,9 @@ public class ParentescoPK implements Serializable{
         this.familiar = familiar;
     }
 
+    public void setId(Long id) {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setId'");
+    }
+
 }

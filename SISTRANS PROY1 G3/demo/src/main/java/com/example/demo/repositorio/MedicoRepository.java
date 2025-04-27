@@ -1,4 +1,4 @@
-package repositorio;
+package com.example.demo.repositorio;
 
 import java.util.Collection;
 

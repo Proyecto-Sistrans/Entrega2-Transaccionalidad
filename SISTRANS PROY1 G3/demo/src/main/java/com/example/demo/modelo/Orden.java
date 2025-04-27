@@ -51,8 +51,8 @@ public class Orden {
     }
 
     //Setters
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setNumero(String numero2) {
+        this.numero = numero2;
     }
     public void setFecha(Date fecha) {
         this.fecha = fecha;

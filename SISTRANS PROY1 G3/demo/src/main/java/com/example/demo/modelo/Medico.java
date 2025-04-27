@@ -66,5 +66,10 @@ public class Medico {
         this.especialidad = especialidad;
     }
 
+    public String getId() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getId'");
+    }
+
 
 }
